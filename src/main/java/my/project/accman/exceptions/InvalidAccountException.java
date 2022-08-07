@@ -5,7 +5,7 @@ import java.util.*;
 
 /**
  * Exception thrown if Account objects are invalid.
- * This Exception contains a list of all the constraint found constraint violations.
+ * This Exception contains a list of all the validation constraint violations.
  */
 public class InvalidAccountException extends RuntimeException{
     @Getter @Setter
