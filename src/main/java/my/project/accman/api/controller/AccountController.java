@@ -35,7 +35,6 @@ public class AccountController {
     private Account getAccountImpl(String uuid) {
         return this.accountService
                 .findAccountByUUID(uuid);
-                //.orElseThrow(() -> new MissingAccountException(uuid));
     }
 
     /**
@@ -53,7 +52,6 @@ public class AccountController {
     private Account addAccountImpl(Account newAccount) {
         return this.accountService
                 .addAccount(newAccount);
-                //.orElseThrow(UnknownException::new);
     }
 
     /**
@@ -72,7 +70,6 @@ public class AccountController {
     private Account updateAccountImpl(Account updatedAccount, String uuid) {
         return this.accountService
                 .updateAccountByUUID(updatedAccount, uuid);
-                //.orElseThrow(() -> new MissingAccountException(uuid));
     }
 
     /**
